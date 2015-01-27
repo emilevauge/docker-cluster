@@ -11,4 +11,4 @@ RUN chmod +x /usr/bin/machine
 
 VOLUME /root/.docker/
 
-ENTRYPOINT ["/bin/bash"]
+CMD ["bash"]
