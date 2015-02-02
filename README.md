@@ -4,8 +4,14 @@ You can use this docker image to test [Machine](https://github.com/docker/machin
 
 Run these commands as root:
 
-	$ alias machine="docker run --privileged -it -v /var/run/docker.sock:/var/run/docker.sock -v /root/.docker:/root/.docker --rm emilevauge/docker-cluster machine"
-	$ alias swarm="docker run --privileged -it -v /var/run/docker.sock:/var/run/docker.sock -v /root/.docker:/root/.docker --rm emilevauge/docker-cluster swarm"
+	$ alias machine="docker run --privileged -it  \
+		-v /var/run/docker.sock:/var/run/docker.sock  \
+		-v /root/.docker:/root/.docker --rm  \
+		emilevauge/docker-cluster machine"
+	$ alias swarm="docker run --privileged -it  \
+		-v /var/run/docker.sock:/var/run/docker.sock  \
+		-v /root/.docker:/root/.docker --rm  \
+		emilevauge/docker-cluster swarm"
 
 You now have swarm and machine using docker into docker!
 
