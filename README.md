@@ -13,7 +13,7 @@ Run these commands as root:
 		-v /root/.docker:/root/.docker --rm  \
 		emilevauge/docker-cluster swarm"
 
-You now have swarm and machine using docker into docker!
+You now have swarm and machine using [docker into docker](https://github.com/jpetazzo/dind)!
 
 	$ machine create -d google --google-project YOUR_PROJECT test
 	$ machine ls
